@@ -46,7 +46,7 @@ const DesktopNav = ({ opennavbar }) => {
           : "bg-transparent"
       } h-[10ch] z-[100] w-full flex items-center transition-all duration-200`}
     >
-      <div className="flex  items-center h-full justify-between w-[95%] sm:w-[100%] xl:w-[100%] mx-auto md:px-4 sm:px-4">
+      <div className="flex  items-center h-full justify-between w-[95%] sm:w-[100%] xl:w-[100%] mx-auto md:px-4 sm:px-4     bg-slate-800 py-2 px-3 border border-transparent text-center shadow-md focus:bg-slate-700 focus:shadow-none active:bg-slate-70">
         {/* LOGO */}
         <div className="flex items-center space-x-2 ">
           <div className="md:w-10 md:h-10 w-6 h-6 rounded-full bg-gradient-to-tr from-cyan-600 to-cyan-400  flex text-white  items-center justify-center flex-col">
@@ -55,7 +55,7 @@ const DesktopNav = ({ opennavbar }) => {
             </Link>
           </div>
           <Link to="/">
-            <h1 className="font-bold text-xs sm:text-base md:text-xl text-black">
+            <h1 className="font-bold text-xs sm:text-base md:text-xl text-white">
               Movie Hub
             </h1>
           </Link>
@@ -71,7 +71,7 @@ const DesktopNav = ({ opennavbar }) => {
               to={navlink.url}
               className={({ isActive }) =>
                 `text-black font-medium hover:text-red-300 ${
-                  isActive ? "text-red-300" : ""
+                  isActive ? "text-red-300 font-bold" : "text-white"
                 }`
               }
             >
@@ -83,7 +83,7 @@ const DesktopNav = ({ opennavbar }) => {
         {/* Login and hamburger menu */}
         <div className="flex items-center space-x-4">
           {/* Login button */}
-          <div className="items-center cursor-pointer  flex   transition-all duration-200 text-black space-x-2">
+          <div className="items-center cursor-pointer  flex   transition-all duration-200 text-white space-x-2">
             <FaRegUserCircle className="w-5 h-5" onClick={openModal} />
             <p className="font-bold text-xs sm:text-base  hover:text-red-400">
               Login / Signup
@@ -95,7 +95,7 @@ const DesktopNav = ({ opennavbar }) => {
           {/* Hamburger Menu */}
           <HiBars3BottomRight
             onClick={opennavbar}
-            className="sm:w-8 sm:h-8 w-6 h-6 cursor-pointer text-black lg:hidden"
+            className="sm:w-8 sm:h-8 w-6 h-6 cursor-pointer text-white lg:hidden"
           />
         </div>
       </div>

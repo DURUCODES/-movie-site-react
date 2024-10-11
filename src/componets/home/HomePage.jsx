@@ -8,8 +8,8 @@ import Tv from "../tv/Tv";
 const HomePage = () => {
   return (
     <div>
-      <div className="flex flex-col md:flex-row  items-center justify-center">
-        <div className="flex flex-col items-center">
+      <div className="flex flex-col md:flex-row px-2 items-center justify-center">
+        <div className="flex flex-col items-center ">
           <Trending />
           <Popular />
           <Tv />

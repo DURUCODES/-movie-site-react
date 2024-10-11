@@ -39,6 +39,9 @@ const Popular = () => {
     setShowAll(true); // Show all movies
     setHideBtn(true); // Hide the button after clicking it
   };
+  const handleImageClick = (movieId) => {
+    navigate(`/movie/${movieId}`);
+  };
 
   return (
     <div className="">

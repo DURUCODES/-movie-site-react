@@ -44,9 +44,9 @@ const DesktopNav = ({ opennavbar }) => {
         navbg
           ? "bg-gradient-to-tr from-cyan-600 to-cyan-400 "
           : "bg-transparent"
-      } h-[10ch] z-[100] w-full flex items-center transition-all duration-200`}
+      } h-[10ch] z-[50] w-full flex items-center transition-all duration-200`}
     >
-      <div className="flex  items-center h-full justify-between w-[95%] sm:w-[100%] xl:w-[100%] mx-auto md:px-4 sm:px-4     bg-slate-800 py-2 px-3 border border-transparent text-center shadow-md focus:bg-slate-700 focus:shadow-none active:bg-slate-70">
+      <div className="flex  items-center h-full justify-between w-[95%] sm:w-[100%] xl:w-[100%] mx-auto md:px-2 sm:px-0  px-2   bg-slate-800 py-2  border border-transparent text-center shadow-md focus:bg-slate-700 focus:shadow-none active:bg-slate-70">
         {/* LOGO */}
         <div className="flex items-center space-x-2 ">
           <div className="md:w-10 md:h-10 w-6 h-6 rounded-full bg-gradient-to-tr from-cyan-600 to-cyan-400  flex text-white  items-center justify-center flex-col">

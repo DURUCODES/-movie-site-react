@@ -13,11 +13,11 @@ const User = () => {
       {hasAccount ? (
         <>
           <Login />
-          <p className="flex ">
+          <p className="flex items-center  text-blue-600 text-xs">
             Don't have an account?{" "}
             <button
               onClick={toggleAccount}
-              class="ml-1 block underline font-sans text-sm font-bold leading-normal text-cyan-500 antialiased"
+              class="ml-2 block underline font-sans text-sm font-bold leading-normal text-cyan-500 antialiased"
             >
               Sign Up
             </button>

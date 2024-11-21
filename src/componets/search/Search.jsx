@@ -15,7 +15,7 @@ const Search = ({ closeNavBar }) => {
   return (
     <div className=" w-full rounded flex">
       <input
-        className="border-b border-gray-300 py-1 focus:border-b-2 focus:border-blue-700 transition-colors  text-white px-2 md:text-black focus:outline-none peer bg-inherit  "
+        className="border-b border-gray-300 py-1 focus:border-b-2 focus:border-blue-700 transition-colors w-[70%]  text-white px-2 md:text-black focus:outline-none peer bg-inherit  "
         placeholder="Search Movie here "
         type="text"
         value={searchQuery}

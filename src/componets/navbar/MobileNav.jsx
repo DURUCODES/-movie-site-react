@@ -50,17 +50,17 @@ const MobileNav = ({ isOpen, closeNavBar }) => {
     <div>
       {/* Overlay */}
       <div
-        className={`transform  transition-all duration-500 inset-0 z-50 bg-black opacity-70 ${
+        className={`transform  transition-all duration-500 inset-0 z-10 h-screen bg-black fixed opacity-70 ${
           isOpen ? "block" : "hidden"
         }`}
       ></div>
       {/* Nav links */}
 
       <div
-        className={`text-white transform transition-all duration-500 delay-300 top-0 absolute flex flex-col justify-center h-screen w-[100%] sm:w-[60%] space-y-6 z-[10000] bg-slate-800 py-2 px-3 border border-transparent text-center shadow-md focus:bg-slate-700 focus:shadow-none active:bg-slate-700 ${navOpen}`}
+        className={`text-white bg-black transform transition-all duration-500 delay-300 top-0 fixed flex flex-col justify-center h-full w-[75%] sm:w-[60%] space-y-6 z-[10000] py-2  border border-transparent text-center shadow-md focus:bg-slate-700 focus:shadow-none active:bg-slate-700 ${navOpen}`}
         style={{ height: "100%" }} // Ensure it covers full height
       >
-        <div className="absolute top-10 left-5">
+        <div className="absolute top-10  left-5">
           <div className="flex items-center cursor-pointer transition-all duration-200 text-white space-x-2 hover:text-red-400">
             <Search closeNavBar={closeNavBar} />
           </div>

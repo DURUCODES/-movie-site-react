@@ -57,10 +57,10 @@ const MobileNav = ({ isOpen, closeNavBar }) => {
       {/* Nav links */}
 
       <div
-        className={`text-white bg-black transform transition-all duration-500 delay-300 top-0 fixed flex flex-col justify-center h-full w-[75%] sm:w-[60%] space-y-6 z-[10000] py-2  border border-transparent text-center shadow-md focus:bg-slate-700 focus:shadow-none active:bg-slate-700 ${navOpen}`}
+        className={`text-white bg-black transform transition-all duration-500 delay-300 top-0 fixed flex flex-col justify-center h-full w-[80%] sm:w-[60%] space-y-6 z-[10] py-2  border border-transparent text-center  ${navOpen}`}
         style={{ height: "100%" }} // Ensure it covers full height
       >
-        <div className="absolute top-10  left-5">
+        <div className="absolute top-10 flex items-center">
           <div className="flex items-center cursor-pointer transition-all duration-200 text-white space-x-2 hover:text-red-400">
             <Search closeNavBar={closeNavBar} />
           </div>
